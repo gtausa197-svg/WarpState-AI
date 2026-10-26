@@ -22,7 +22,7 @@
 </div>
 
 ---
-
+Huge Face: https://huggingface.co/zerdovzad/WarpStateAI
 ## 🧠 What is WarpState?
 
 **WarpState** is an experimental autoregressive language model exploring a different way to balance *local precision* and *long-range continuity*. Instead of building a full sequence-wide attention matrix at every layer, it combines:
