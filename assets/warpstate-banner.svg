@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" role="img" aria-label="WarpState: memory-native language modeling">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070B1A"/><stop offset="0.52" stop-color="#101329"/><stop offset="1" stop-color="#080C22"/></linearGradient>
+ <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4DE0FF"/><stop offset=".6" stop-color="#9B68FF"/><stop offset="1" stop-color="#EE7CF7"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#5D3FC8" stop-opacity=".55"/><stop offset="1" stop-color="#5D3FC8" stop-opacity="0"/></radialGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" stroke="#7B85B8" stroke-opacity=".09" fill="none"/></pattern>
+</defs>
+<rect width="1600" height="440" rx="30" fill="url(#bg)"/><rect width="1600" height="440" rx="30" fill="url(#grid)"/>
+<circle cx="1310" cy="217" r="390" fill="url(#halo)"/>
+<path d="M0 385 C350 330 440 446 790 377 S1340 306 1600 358" fill="none" stroke="url(#line)" stroke-opacity=".23" stroke-width="2"/>
+<g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" fill="#EFF4FF">
+ <text x="112" y="102" font-size="22" letter-spacing="5" fill="#7FD3F6">EXPERIMENTAL NEURAL SYSTEMS</text>
+ <text x="106" y="245" font-weight="850" font-size="118" letter-spacing="-6">WARP<tspan fill="#AC85FF">STATE</tspan></text>
+ <rect x="112" y="270" width="510" height="5" rx="2.5" fill="url(#line)"/>
+ <text x="112" y="319" font-size="27" fill="#C3CCE6">Memory-native language modeling</text>
+ <text x="112" y="364" font-size="20" fill="#8290BC" letter-spacing="1.5">2.005B PARAMETERS   /   FAST + SLOW MEMORY   /   SFT + DPO</text>
+</g>
+<g transform="translate(1160 204)">
+ <circle r="147" fill="none" stroke="#796CBB" stroke-opacity=".25" stroke-width="1"/>
+ <circle r="113" fill="none" stroke="#8D6AD9" stroke-opacity=".48" stroke-width="2" stroke-dasharray="8 14"/>
+ <circle r="77" fill="none" stroke="#62DAEE" stroke-opacity=".55" stroke-width="2"/>
+ <path d="M-170 -28 C-117 -104 -83 -20 -30 -68 S39 -109 70 -35 S118 38 176 -14" stroke="#59D8F8" stroke-width="4" fill="none" filter="url(#glow)"/>
+ <path d="M-161 45 C-103 88 -72 -40 -19 13 S59 88 98 17 S146 -32 181 52" stroke="#BB89FF" stroke-width="4" fill="none" filter="url(#glow)"/>
+ <g fill="#D1C0FF"><circle cx="-30" cy="-68" r="7"/><circle cx="70" cy="-35" r="7"/><circle cx="-19" cy="13" r="7"/><circle cx="98" cy="17" r="7"/></g>
+ <circle r="23" fill="#111A36" stroke="#8BEAFF" stroke-width="3"/><circle r="8" fill="#D5F6FF"/>
+</g>
+<rect x="1" y="1" width="1598" height="438" rx="29" fill="none" stroke="#56568F" stroke-opacity=".5" stroke-width="2"/>
+</svg>

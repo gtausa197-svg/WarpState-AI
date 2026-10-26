@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="650" viewBox="0 0 1450 650" role="img" aria-label="WarpState architecture overview">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0C1025"/><stop offset="1" stop-color="#15112C"/></linearGradient>
+ <linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5FE0F4"/><stop offset="1" stop-color="#A27DF5"/></linearGradient>
+ <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#7E92D0"/></marker>
+ <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000" flood-opacity=".25"/></filter>
+</defs>
+<rect width="1450" height="650" rx="24" fill="url(#bg)"/>
+<g font-family="Inter, Segoe UI, Arial, sans-serif">
+ <text x="70" y="62" font-size="29" font-weight="700" fill="#ECF1FF">Architecture overview</text>
+ <text x="70" y="95" font-size="17" fill="#8796C2">One core execution: local evidence + compressed history → gated fusion</text>
+ <g fill="none" stroke="#7E92D0" stroke-width="3" marker-end="url(#arrow)">
+  <path d="M252 206 H362"/><path d="M578 206 H682"/><path d="M901 206 H1017"/>
+  <path d="M469 268 V383 H685"/><path d="M791 383 V272"/>
+  <path d="M1142 271 V380 H1142"/>
+ </g>
+ <rect x="70" y="152" width="182" height="109" rx="16" fill="#1B2346" stroke="#4D81AF" stroke-width="2" filter="url(#shadow)"/>
+ <text x="161" y="191" text-anchor="middle" font-size="21" font-weight="700" fill="#DDEEFF">Input</text>
+ <text x="161" y="221" text-anchor="middle" font-size="15" fill="#8DD7F0">Token embeddings</text>
+ <text x="161" y="244" text-anchor="middle" font-size="14" fill="#9AAED6">RMSNorm + QKVGU</text>
+ <rect x="362" y="152" width="216" height="109" rx="16" fill="#123649" stroke="#47CCE9" stroke-width="2" filter="url(#shadow)"/>
+ <text x="470" y="193" text-anchor="middle" font-size="20" font-weight="700" fill="#CCFAFF">Local Attention</text>
+ <text x="470" y="222" text-anchor="middle" font-size="15" fill="#9FE8FA">Causal SDPA + RoPE</text>
+ <text x="470" y="246" text-anchor="middle" font-size="14" fill="#6CBACD">128-token chunks</text>
+ <rect x="682" y="152" width="219" height="109" rx="16" fill="#292045" stroke="#9A7BF2" stroke-width="2" filter="url(#shadow)"/>
+ <text x="791" y="193" text-anchor="middle" font-size="20" font-weight="700" fill="#F0E4FF">Gated Fusion</text>
+ <text x="791" y="222" text-anchor="middle" font-size="15" fill="#D0BAFF">Local × gate</text>
+ <text x="791" y="246" text-anchor="middle" font-size="14" fill="#A897CE">Memory × (1 − gate)</text>
+ <rect x="1017" y="152" width="336" height="109" rx="16" fill="#282344" stroke="#A98AFC" stroke-width="2" filter="url(#shadow)"/>
+ <text x="1185" y="190" text-anchor="middle" font-size="21" font-weight="700" fill="#F2E8FF">Core Refinement</text>
+ <text x="1185" y="221" text-anchor="middle" font-size="16" fill="#C0AFE9">Residual + RMSNorm + SwiGLU</text>
+ <text x="1185" y="245" text-anchor="middle" font-size="14" fill="#9FA1D0">Repeated at logical depth</text>
+ <rect x="364" y="383" width="537" height="135" rx="19" fill="#182643" stroke="#648FE1" stroke-width="2" filter="url(#shadow)"/>
+ <text x="632" y="422" text-anchor="middle" font-size="22" font-weight="700" fill="#F0F5FF">Temporal Memory</text>
+ <rect x="402" y="442" width="210" height="50" rx="10" fill="#174A58" stroke="#45D6DF" stroke-width="1.5"/>
+ <text x="507" y="473" text-anchor="middle" font-size="19" font-weight="700" fill="#ABF8F9">FAST STATE</text>
+ <rect x="650" y="442" width="210" height="50" rx="10" fill="#38264F" stroke="#AF8CF1" stroke-width="1.5"/>
+ <text x="755" y="473" text-anchor="middle" font-size="19" font-weight="700" fill="#DEC2FF">SLOW STATE</text>
+ <text x="632" y="546" text-anchor="middle" font-size="15" fill="#93A2CC">State updated after each completed local chunk</text>
+ <rect x="1040" y="383" width="313" height="135" rx="16" fill="#143A4B" stroke="#3DD4E4" stroke-width="2" filter="url(#shadow)"/>
+ <text x="1196" y="429" text-anchor="middle" font-size="22" font-weight="700" fill="#D4FDFF">LM Head</text>
+ <text x="1196" y="462" text-anchor="middle" font-size="15" fill="#98E0EA">Tied embedding projection</text>
+ <text x="1196" y="485" text-anchor="middle" font-size="15" fill="#98E0EA">Next-token logits</text>
+ 
+ <text x="70" y="607" font-size="15" fill="#7288B4">Conceptual figure · not a claim of infinite context or lossless memory.</text>
+</g>
+<rect x="1" y="1" width="1448" height="648" rx="23" fill="none" stroke="#494B79" stroke-width="2"/>
+</svg>

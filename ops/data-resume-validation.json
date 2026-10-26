@@ -1,0 +1,33 @@
+{
+  "checked_at": 1788943224.2171412,
+  "source_revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+  "datasets_version": "5.0.1",
+  "graceful_stop": true,
+  "checks": {
+    "train": {
+      "committed_tokens": 174099785,
+      "file_bytes": 348199570,
+      "checked_prefix_bytes": 8388608,
+      "prefix_sha256": "fae5a1378eb16a878f83f8784974923cb00e47c490ab94aeb34487d7ce737d14",
+      "min_token": 2,
+      "max_token": 32767,
+      "eos_tokens": 159064
+    },
+    "val": {
+      "committed_tokens": 191498,
+      "file_bytes": 382996,
+      "checked_prefix_bytes": 382996,
+      "prefix_sha256": "e08fc41708fce35d5cab7cd90c471771292c4b3aac2495939631ebb9bca9d1a7",
+      "min_token": 2,
+      "max_token": 32766,
+      "eos_tokens": 168
+    }
+  },
+  "resume_verified": true,
+  "resumed_train_tokens": 239010719,
+  "resumed_val_tokens": 319888,
+  "resume_checked_at": 1788943296.4178915,
+  "shutdown_issue": "Mitigated by ops/prepare_data.py, which explicitly exits after the original pipeline commits and returns.",
+  "launcher_live_test": "work/validation/live-resume-exitguard/validation.json",
+  "launcher_live_test_passed": true
+}

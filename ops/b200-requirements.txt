@@ -1,0 +1,2 @@
+-r training-requirements-resolved.txt
+supervisor==4.3.0
