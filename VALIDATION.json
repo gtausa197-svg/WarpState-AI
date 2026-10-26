@@ -1,0 +1,19 @@
+{
+  "unit_tests": 3,
+  "unit_test_status": "passed",
+  "tests": [
+    "partial final token batch",
+    "preparation interruption and rollback",
+    "small GPU full-optimizer resume equals uninterrupted run; changed LR rejected"
+  ],
+  "live_fineweb_test": {
+    "train_tokens": 10000,
+    "val_tokens": 64,
+    "resume_byte_identical": true,
+    "sha256_verified": true
+  },
+  "test_platform": "Windows / RTX 5070 Laptop / torch 2.14.0+cu130",
+  "target_platform": "Linux / one RTX PRO 6000 Blackwell 96 GB",
+  "full_target_hardware_tested": false,
+  "full_40b_corpus_prepared_locally": false
+}

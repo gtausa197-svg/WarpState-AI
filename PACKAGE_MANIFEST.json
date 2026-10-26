@@ -1,0 +1,42 @@
+{
+  "run_40b.py": {
+    "sha256": "9ad6533d781e376b3b40c16e6c29ef15063d39f917a93800489f17115be15ba0",
+    "bytes": 50988
+  },
+  "README_UK.md": {
+    "sha256": "b401dc313e25aea48ab1a0bd24945a9923cd98adcb254c77cb1e130dd16c1335",
+    "bytes": 13562
+  },
+  "DATA_NOTICE.md": {
+    "sha256": "6b11284648bcb6fe9d1c74204d54e64d228b05d78749330c5caab119806b2a79",
+    "bytes": 735
+  },
+  "test_server.py": {
+    "sha256": "66ebfd733f8d71a462108c5d99dc469a99d1023bb7a0cd611b501a58b9269bff",
+    "bytes": 6351
+  },
+  "tokenizer.model": {
+    "sha256": "ebae4b4310068ee102f7bf68ac68b79ee1425baa32de3ca8ff8138692529d84e",
+    "bytes": 545080
+  },
+  "configs/warpstate_2b.json": {
+    "sha256": "884ba9e523af2a065ff0e11a4fd86eddfdc5ef656196dc318f94ec455be63009",
+    "bytes": 269
+  },
+  "warpstate/__init__.py": {
+    "sha256": "f386c0880cb499d84159d8205667d250a72d0e8a102f0d7be6af0ba0ea33b22b",
+    "bytes": 113
+  },
+  "warpstate/config.py": {
+    "sha256": "1d716b6c582bab21e8d5fcbaa6d9f3be4f792baf9b6abe826c72422f8eced6ad",
+    "bytes": 1187
+  },
+  "warpstate/model.py": {
+    "sha256": "025330ee58cca899695c7631e1a06d2efd006402c61e51106afe6fa2e1d35161",
+    "bytes": 15500
+  },
+  "VALIDATION.json": {
+    "sha256": "168bb8233b04db144021f185b6a3890c06c137c3c5c29c1f18464ee8474ce1b8",
+    "bytes": 614
+  }
+}
